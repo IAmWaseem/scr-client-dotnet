@@ -1,0 +1,6 @@
+C:\Users\WaseemHassan\Documents\Visual Studio 2015\Projects\SCR\SCR.Console\bin\Debug\SCR.Console.exe.config
+C:\Users\WaseemHassan\Documents\Visual Studio 2015\Projects\SCR\SCR.Console\bin\Debug\SCR.Console.exe
+C:\Users\WaseemHassan\Documents\Visual Studio 2015\Projects\SCR\SCR.Console\bin\Debug\SCR.Console.pdb
+C:\Users\WaseemHassan\Documents\Visual Studio 2015\Projects\SCR\SCR.Console\obj\Debug\SCR.Console.csprojResolveAssemblyReference.cache
+C:\Users\WaseemHassan\Documents\Visual Studio 2015\Projects\SCR\SCR.Console\obj\Debug\SCR.Console.exe
+C:\Users\WaseemHassan\Documents\Visual Studio 2015\Projects\SCR\SCR.Console\obj\Debug\SCR.Console.pdb

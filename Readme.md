@@ -17,7 +17,7 @@
         
 Where **DriverName** is the implementation of the driver controller you want to use in the Client. As we have an example Controller named **SimpleDriver** we can use it for testing. Simply type the following command to launch the Client with the test Controller:
 
-		Client.exe SCR.SimpleDriver port:3001
+	Client.exe SCR.SimpleDriver port:3001
  
 
 

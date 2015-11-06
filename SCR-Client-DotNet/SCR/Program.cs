@@ -25,7 +25,8 @@ namespace SCR
 			Controller driver = Load(args[0]);
 			driver.Stage_ = stage;
 			driver.TrackName = trackName;
-
+			
+			/* Build init string */
 			float[] angles = driver.InitAngles();
 			string initStr = clientId + "(init";
 			for (int i = 0; i < angles.Length; i++)
@@ -37,24 +38,39 @@ namespace SCR
 			bool shutdownOccured = false;
 			do
 			{
+				/*
+				 * Client identification
+				 */
 				do
 				{
 					mySocket.Send(initStr);
 					inMsg = mySocket.Receive(UDP_TIMEOUT);
 				} while (inMsg == null || inMsg.IndexOf("***identified***") < 0);
 
+				/*
+				 * Start to drive
+				 */
 				long currStep = 0;
 				while (true)
 				{
+					/*
+					 * Receives game state from TORCS
+					 */
 					inMsg = mySocket.Receive(UDP_TIMEOUT);
 					if (inMsg != null)
-					{
+					{                   
+						/*
+						 * Check if race is ended (shutdown)
+						 */
 						if (inMsg.IndexOf("***shutdown***") >= 0)
 						{
 							shutdownOccured = true;
 							Console.WriteLine("Server Shutdown!");
 							break;
 						}
+						/*
+						 * Check if race is restarted
+						 */
 						if (inMsg.IndexOf("***restart***") >= 0)
 						{
 							driver.Reset();
@@ -82,14 +98,20 @@ namespace SCR
 					}
 				}
 			} while (++curEpisode < maxEpisodes && !shutdownOccured);
+			/*
+			 * Shutdown the controller
+			 */
 			driver.Shutdown();
-			//mySocket.Close();
+			mySocket.Close();
 			Console.WriteLine("Client Shutdown.");
 			Console.WriteLine("Bye, bye!");
 		}
 
 		private static void ParseParameters(string[] args)
 		{
+			/*
+			 * Set default values for the options
+			 */
 			port = 3001;
 			host = "127.0.0.1";
 			clientId = "SCR";

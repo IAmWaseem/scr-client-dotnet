@@ -24,7 +24,7 @@
 		}
 
 		public abstract Action Control(ISensorModel sensorModel);
-		public abstract void Reset();
+		public abstract void Reset(); // Called at the beginning of each new trial
 		public abstract void Shutdown();
 	}
 }

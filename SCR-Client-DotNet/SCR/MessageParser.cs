@@ -6,6 +6,8 @@ namespace SCR
 {
 	public class MessageParser
 	{
+		// Parses the message from the serverbot, and creates a table of
+		// Associated names and values of the readings
 		private Dictionary<string, object> table = new Dictionary<string, object>();
 		private string message;
 

@@ -46,11 +46,11 @@
     <Compile Include="Action.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="DeadSimpleSoloController.cs" />
+    <Compile Include="ISensorModel.cs" />
     <Compile Include="MessageBasedSensorModel.cs" />
     <Compile Include="MessageParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SensorModel.cs" />
     <Compile Include="SimpleDriver.cs" />
     <Compile Include="SocketHandler.cs" />
   </ItemGroup>

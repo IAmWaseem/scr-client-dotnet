@@ -19,6 +19,4 @@ Where **DriverName** is the implementation of the driver controller you want to 
 
 	Client.exe SCR.SimpleDriver port:3001
  
-
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+ Complete detail of the parameters is provided in the Manual found on http://cs.adelaide.edu.au/~optlog/SCR2015/software.html

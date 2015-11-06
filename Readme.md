@@ -1,5 +1,7 @@
 ## SCR C# Client
 
+Its an unofficial port of the Java client for SCR Championships!
+
 #### Compile Instructions
 1. Download this repository as zip.
 2. Extract the contents anywhere you like.
@@ -20,3 +22,5 @@ Where **DriverName** is the implementation of the driver controller you want to 
 	Client.exe SCR.SimpleDriver port:3001
  
  Complete detail of the parameters is provided in the Manual found at http://cs.adelaide.edu.au/~optlog/SCR2015/software.html
+ 
+ In case of any issues / bugs, email me at waseemhassan@outlook.com so that I can provide a fix.

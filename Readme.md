@@ -1,6 +1,6 @@
 ## SCR C# Client
 
-### Compile Instructions
+#### Compile Instructions
 1. Download this repository as zip.
 2. Extract the contents anywhere you like.
 3. To compile the client, simply run **Developer Command Prompt for VS20##** where ## is the version of Visual Studio installed on your system. You can search for it in the start menu.
@@ -10,7 +10,7 @@
 		csc /out:Client.exe Action.cs SocketHandler.cs ISensorModel.cs MessageParser.cs MessageBasedSensorModel.cs Controller.cs SimpleDriver.cs Program.cs
 6. This will compile and create the executable named **Client.exe**
 
-### Execute Instructions
+#### Execute Instructions
 1. To execute simply run the following command and specifying parameters for the client
 
 		Client.exe DriverName host:<ip> port:<p> id:<client-id> maxEpisodes:<me> maxSteps:<ms> verbose:<v> track:<trackname> stage:<s>

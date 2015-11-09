@@ -1,0 +1,1 @@
+C:\Users\WaseemHassan\Documents\GitHub\scr-client-dotnet\SCR-Client-DotNet\SCR\bin\Debug\SCR.Console.exe.config

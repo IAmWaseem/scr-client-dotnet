@@ -17,7 +17,9 @@ namespace SCR
 
 		public SocketHandler(string host, int port, bool verbose)
 		{
-			this.address = new IPEndPoint(Dns.GetHostEntry(host).AddressList[0], port);
+			// Only works for VS2015
+			//this.address = new IPEndPoint(Dns.GetHostEntry(host).AddressList[0], port);
+			this.address = new IPEndPoint(IPAddress.Parse(host), port);
 			this.port = port;
 			this.verbose = verbose;
 			this.socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
